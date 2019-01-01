@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage
+    xmlns                             ="http://xamarin.com/schemas/2014/forms"
+    xmlns:x                            ="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views                        ="clr-namespace:POC.Views"
+    x:Class                            ="POC.MainPage"
+    xmlns:android                      ="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    android:TabbedPage.ToolbarPlacement="Bottom"
+    BarBackgroundColor="White"
+   >
+    <TabbedPage.ToolbarItems>
+                <ToolbarItem Icon="bell" Command="{Binding ToolbarItemCommand}"/>
+           <ToolbarItem Icon="logout" Command="{Binding ToolbarItemCommand}"/>
+    </TabbedPage.ToolbarItems>
+    <TabbedPage.Children>
+        <NavigationPage
+            Title             ="SUMMARY"
+            BarBackgroundColor="{StaticResource NavigationColor}"
+            Tint="White">
+            <NavigationPage.Icon>
+                <OnPlatform
+                    x:TypeArguments="FileImageSource">
+                    <On
+                        Platform="iOS"
+                        Value   ="tab_feed.png" />
+                    <On
+                        Platform="Android"
+                        Value   ="tab_feed.png" />
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:ItemsPage />
+            </x:Arguments>
+        </NavigationPage>
+        
+          <NavigationPage
+            Title             ="APPLY"
+            BarBackgroundColor="{StaticResource NavigationColor}"
+            Tint="White">
+            <NavigationPage.Icon>
+                <OnPlatform
+                    x:TypeArguments="FileImageSource">
+                    <On
+                        Platform="iOS"
+                        Value   ="tab_apply" />
+                     <On
+                        Platform="Android"
+                        Value   ="tab_apply.png" />
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:ApplyPage />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage
+            Title             ="HISTORY"
+            BarBackgroundColor="{StaticResource NavigationColor}"
+            Tint="White">
+            <NavigationPage.Icon>
+                <OnPlatform
+                    x:TypeArguments="FileImageSource">
+                    <On
+                        Platform="iOS"
+                        Value   ="tab_about.png" />
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:AboutPage />
+            </x:Arguments>
+        </NavigationPage>
+    </TabbedPage.Children>
+</TabbedPage>

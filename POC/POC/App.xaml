@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application
+    xmlns ="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="POC.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--Global Strings-->
+            <x:String
+                x:Key="Approved">Approved</x:String>
+            <x:String
+                x:Key="Rejected">Rejected</x:String>
+            <x:String
+                x:Key="Pending">Pending</x:String>
+             <x:String
+                x:Key="From">From</x:String>
+             <x:String
+                x:Key="To">To</x:String>
+            <x:String
+                x:Key="ComingSoon">Coming Soon!</x:String>
+            <!--Global Styles-->
+            <Color
+                x:Key="PendingIndicator">#2196F3</Color>
+            <Color
+                x:Key="RejectedIndicator">Red</Color>
+            <Color
+                x:Key="NavigationColor">#168a8e</Color>
+            <Style
+                TargetType="NavigationPage">
+                <Setter
+                    Property="BarBackgroundColor"
+                    Value   ="{StaticResource NavigationColor}" />
+                <Setter
+                    Property="BarTextColor"
+                    Value   ="White" />
+                <Setter
+                    Property="Tint"
+                    Value   ="White" />
+            </Style>
+            <Style
+                x:Key     ="ListViewStyle"
+                TargetType="ListView">
+                <Setter
+                    Property="BackgroundColor"
+                    Value   ="White" />
+                <Setter
+                    Property="SeparatorVisibility"
+                    Value   ="None" />
+                <Setter
+                    Property="HasUnevenRows"
+                    Value   ="True" />
+            </Style>
+            <Style
+                x:Key     ="GrayLabelStyle"
+                TargetType="Label">
+                <Setter
+                    Property="TextColor"
+                    Value   ="Gray" />
+                <Setter
+                    Property="VerticalOptions"
+                    Value   ="CenterAndExpand" />
+                <Setter
+                    Property="Font"
+                    Value   ="14" />
+                <Setter
+                    Property="VerticalTextAlignment"
+                    Value   ="Center" />
+            </Style>
+            
+             <Style
+                x:Key     ="DarkLabelStyle"
+                TargetType="Label">
+                <Setter
+                    Property="TextColor"
+                    Value   ="Black" />
+                <Setter
+                    Property="VerticalOptions"
+                    Value   ="CenterAndExpand" />
+                <Setter
+                    Property="Font"
+                    Value   ="15" />
+                <Setter
+                    Property="VerticalTextAlignment"
+                    Value   ="Center" />
+            </Style>
+            
+            <Style
+                x:Key     ="DotButton"
+                TargetType="Button">
+                <Setter
+                    Property="WidthRequest"
+                    Value   ="12" />
+                <Setter
+                    Property="HeightRequest"
+                    Value   ="12" />
+                <Setter
+                    Property="VerticalOptions"
+                    Value   ="CenterAndExpand" />
+                <Setter
+                    Property="CornerRadius"
+                    Value   ="6" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
