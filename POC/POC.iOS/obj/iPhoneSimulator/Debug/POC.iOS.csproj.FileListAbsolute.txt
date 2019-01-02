@@ -1,0 +1,16 @@
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhoneSimulator/Debug/coremlc/_PartialAppManifest.items
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhoneSimulator/Debug/coremlc/_BundleResourceWithLogicalName.items
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhoneSimulator/Debug/optimized/tab_about.png
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhoneSimulator/Debug/optimized/tab_about@2x.png
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhoneSimulator/Debug/optimized/tab_about@3x.png
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhoneSimulator/Debug/optimized/tab_feed.png
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhoneSimulator/Debug/optimized/tab_feed@2x.png
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhoneSimulator/Debug/optimized/tab_feed@3x.png
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhoneSimulator/Debug/optimized/xamarin_logo.png
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhoneSimulator/Debug/optimized/xamarin_logo@2x.png
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhoneSimulator/Debug/optimized/xamarin_logo@3x.png
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhoneSimulator/Debug/optimized/
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhoneSimulator/Debug/POC.iOS.csprojAssemblyReference.cache

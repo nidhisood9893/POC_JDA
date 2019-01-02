@@ -2,35 +2,6 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v8.1": {
-      "BadgeView/2017.10.17": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Android.Support.Animated.Vector.Drawable": "23.3.0",
-          "Xamarin.Android.Support.Design": "23.3.0",
-          "Xamarin.Android.Support.Vector.Drawable": "23.3.0",
-          "Xamarin.Android.Support.v4": "23.3.0",
-          "Xamarin.Android.Support.v7.AppCompat": "23.3.0",
-          "Xamarin.Android.Support.v7.CardView": "23.3.0",
-          "Xamarin.Android.Support.v7.MediaRouter": "23.3.0",
-          "Xamarin.Android.Support.v7.RecyclerView": "23.3.0",
-          "Xamarin.Forms": "2.4.0.282"
-        },
-        "frameworkAssemblies": [
-          "Java.Interop",
-          "Mono.Android",
-          "System",
-          "System.Core",
-          "System.Xml"
-        ],
-        "compile": {
-          "lib/monoandroid80/BadgeView.Android.dll": {},
-          "lib/monoandroid80/BadgeView.Shared.dll": {}
-        },
-        "runtime": {
-          "lib/monoandroid80/BadgeView.Android.dll": {},
-          "lib/monoandroid80/BadgeView.Shared.dll": {}
-        }
-      },
       "CarouselView.FormsPlugin/5.2.0": {
         "type": "package",
         "dependencies": {
@@ -46,6 +17,20 @@
         "runtime": {
           "lib/MonoAndroid/CarouselView.FormsPlugin.Abstractions.dll": {},
           "lib/MonoAndroid/CarouselView.FormsPlugin.Android.dll": {}
+        }
+      },
+      "Plugin.Badge/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.1.0.583944"
+        },
+        "compile": {
+          "lib/MonoAndroid10/Plugin.Badge.Abstractions.dll": {},
+          "lib/MonoAndroid10/Plugin.Badge.Droid.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Plugin.Badge.Abstractions.dll": {},
+          "lib/MonoAndroid10/Plugin.Badge.Droid.dll": {}
         }
       },
       "Xamarin.Android.Arch.Core.Common/1.0.0.1": {
@@ -414,21 +399,6 @@
     }
   },
   "libraries": {
-    "BadgeView/2017.10.17": {
-      "sha512": "dlMWkOXsXPxdpohT52/9Sos64+kvm7Rgs2cuyAq4oKUCyfRSjQOcdIWVWAEe2BFEQcXFFOGdnsyCfiA3R31GiQ==",
-      "type": "package",
-      "path": "badgeview/2017.10.17",
-      "files": [
-        ".signature.p7s",
-        "badgeview.2017.10.17.nupkg.sha512",
-        "badgeview.nuspec",
-        "lib/monoandroid80/BadgeView.Android.dll",
-        "lib/monoandroid80/BadgeView.Shared.dll",
-        "lib/portable45-net45+win8+wpa81/BadgeView.Shared.dll",
-        "lib/xamarinios10/BadgeView.Shared.dll",
-        "lib/xamarinios10/BadgeView.iOS.dll"
-      ]
-    },
     "CarouselView.FormsPlugin/5.2.0": {
       "sha512": "rN9CRpr/xkp0F+1oBdqtPwu7g2D6MZXl7gSuUoxGWIjCQKaiCh0cqY2WbRY2UbkpliPiNpopjQ+Ptj0XoplTJw==",
       "type": "package",
@@ -449,6 +419,45 @@
         "lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll",
         "lib/netstandard2.0/CarouselView.FormsPlugin.Abstractions.dll",
         "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll"
+      ]
+    },
+    "Plugin.Badge/2.1.0": {
+      "sha512": "YKOcLOEoHil39MbnKJVUpTxyRlh+UHHp1sRlfbcEVVRFcZynhmIEKSlhvgs+qIkgqkAiVnJ/QdPNyfB+khRKXQ==",
+      "type": "package",
+      "path": "plugin.badge/2.1.0",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid10/Plugin.Badge.Abstractions.deps.json",
+        "lib/MonoAndroid10/Plugin.Badge.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Badge.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Badge.Droid.dll",
+        "lib/MonoAndroid10/Plugin.Badge.Droid.pdb",
+        "lib/Xamarin.iOS10/Plugin.Badge.Abstractions.deps.json",
+        "lib/Xamarin.iOS10/Plugin.Badge.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Badge.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Badge.iOS.dll",
+        "lib/net45/Plugin.Badge.Abstractions.deps.json",
+        "lib/net45/Plugin.Badge.Abstractions.dll",
+        "lib/net45/Plugin.Badge.Abstractions.pdb",
+        "lib/net45/Plugin.Badge.WPF.dll",
+        "lib/net45/Plugin.Badge.WPF.pdb",
+        "lib/netstandard1.4/Plugin.Badge.Abstractions.deps.json",
+        "lib/netstandard1.4/Plugin.Badge.Abstractions.dll",
+        "lib/netstandard1.4/Plugin.Badge.Abstractions.pdb",
+        "lib/portable-net45+win8+wpa81+wp8/Plugin.Badge.Abstractions.deps.json",
+        "lib/portable-net45+win8+wpa81+wp8/Plugin.Badge.Abstractions.dll",
+        "lib/portable-net45+win8+wpa81+wp8/Plugin.Badge.Abstractions.pdb",
+        "lib/uap10.0/Plugin.Badge.Abstractions.dll",
+        "lib/uap10.0/Plugin.Badge.Abstractions.pdb",
+        "lib/uap10.0/Plugin.Badge.UWP.dll",
+        "lib/uap10.0/Plugin.Badge.UWP.pdb",
+        "lib/uap10.0/Plugin.Badge.UWP.pri",
+        "lib/xamarinmac20/Plugin.Badge.Abstractions.deps.json",
+        "lib/xamarinmac20/Plugin.Badge.Abstractions.dll",
+        "lib/xamarinmac20/Plugin.Badge.Abstractions.pdb",
+        "lib/xamarinmac20/Plugin.Badge.Mac.dll",
+        "plugin.badge.2.1.0.nupkg.sha512",
+        "plugin.badge.nuspec"
       ]
     },
     "Xamarin.Android.Arch.Core.Common/1.0.0.1": {
@@ -879,8 +888,8 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v8.1": [
-      "BadgeView >= 2017.10.17",
       "CarouselView.FormsPlugin >= 5.2.0",
+      "Plugin.Badge >= 2.1.0",
       "Xamarin.Android.Support.Design >= 27.0.2.1",
       "Xamarin.Android.Support.v4 >= 27.0.2.1",
       "Xamarin.Android.Support.v7.AppCompat >= 27.0.2.1",
@@ -917,6 +926,12 @@
         }
       }
     },
+    "dependencies": {
+      "Plugin.Badge": {
+        "target": "Package",
+        "version": "[2.1.0, )"
+      }
+    },
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
@@ -947,10 +962,6 @@
           "Xamarin.Android.Support.v7.MediaRouter": {
             "target": "Package",
             "version": "27.0.2.1"
-          },
-          "BadgeView": {
-            "target": "Package",
-            "version": "2017.10.17"
           }
         }
       }

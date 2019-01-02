@@ -5,11 +5,20 @@
     xmlns:views                        ="clr-namespace:POC.Views"
     x:Class                            ="POC.MainPage"
     xmlns:android                      ="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:badge                      ="clr-namespace:BadgeView.Shared;assembly=BadgeView.Shared"
+    xmlns:plugin                      ="clr-namespace:Plugin.Badge.Abstractions;assembly=Plugin.Badge.Abstractions"
     android:TabbedPage.ToolbarPlacement="Bottom"
     BarBackgroundColor="White"
-   >
-    <TabbedPage.ToolbarItems>
-                <ToolbarItem Icon="bell" Command="{Binding ToolbarItemCommand}"/>
+    >
+    <TabbedPage.ToolbarItems >
+       <!-- <badge:BadgeView Text="1" BadgeColor="Red">
+            
+        </badge:BadgeView>-->
+       
+                <ToolbarItem  Icon="bell" Command="{Binding ToolbarItemCommand}">
+          <!--  <plugin:TabBadge.BadgeText>2</plugin:TabBadge.BadgeText>
+        <plugin:TabBadge.BadgeColor>Red</plugin:TabBadge.BadgeColor>-->
+        </ToolbarItem>
            <ToolbarItem Icon="logout" Command="{Binding ToolbarItemCommand}"/>
     </TabbedPage.ToolbarItems>
     <TabbedPage.Children>

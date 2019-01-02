@@ -31,3 +31,5 @@ Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 System.Diagnostics.Tools
 netstandard
+Plugin.Badge.Abstractions
+Plugin.Badge.Droid

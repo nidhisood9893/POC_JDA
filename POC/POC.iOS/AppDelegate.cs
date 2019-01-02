@@ -24,7 +24,7 @@ namespace POC.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-
+            CarouselView.FormsPlugin.iOS.CarouselViewRenderer.Init();
             return base.FinishedLaunching(app, options);
         }
     }

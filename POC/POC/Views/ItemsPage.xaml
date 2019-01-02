@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="POC.Views.ItemsPage"
-              Title="{Binding Title}"
-             x:Name="BrowseItemsPage">
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns        ="http://xamarin.com/schemas/2014/forms"
+    xmlns:x       ="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class       ="POC.Views.ItemsPage"
+    xmlns:local       ="clr-namespace:POC.Views"
+    xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+    Title         ="{Binding Title}"
+    x:Name        ="SummaryPage">
     <!--<ContentPage.ToolbarItems>
                 <ToolbarItem Text="Add" Clicked="AddItem_Clicked">
             <ToolbarItem.Icon>
@@ -14,14 +17,29 @@
         </ToolbarItem>
     </ContentPage.ToolbarItems>-->
     <ContentPage.Content>
-
-        <!--<cv:CarouselViewControl x:Name="carousel"
-        
-        Scrolled="Handle_Scrolled"
-        Orientation="Horizontal">
-
-
-        </cv:CarouselViewControl>-->
+        <controls:CarouselViewControl
+            x:Name="carouselView"
+            Orientation      ="Horizontal"
+            InterPageSpacing ="10"
+            ItemsSource      ="{Binding Views}"
+            VerticalOptions  ="FillAndExpand"
+            HorizontalOptions="FillAndExpand"
+            ShowIndicators="true"
+            PositionSelected="PositionSelectedHandler"
+            >
+            <controls:CarouselViewControl.ItemTemplate>
+                <DataTemplate>
+                    <!--<ViewCell>
+                        <Label Text="{Binding EmployeeName}" TextColor="Gray"/>
+                    </ViewCell>-->
+                    
+                    <local:CarouselCustomView BindingContext="{Binding Leaves}">
+                    
+                    </local:CarouselCustomView>
+                    <!-- where MyView is a ContentView -->
+                </DataTemplate>
+            </controls:CarouselViewControl.ItemTemplate>
+        </controls:CarouselViewControl>
         <!--<StackLayout>
             <ListView x:Name="ItemsListView" 
                 ItemsSource="{Binding Items}"

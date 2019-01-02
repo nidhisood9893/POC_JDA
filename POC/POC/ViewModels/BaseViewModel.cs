@@ -12,7 +12,7 @@ namespace POC
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        // public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
+        public ISummaryDataStore<Leaves> SummaryDataStore => DependencyService.Get<ISummaryDataStore<Leaves>>() ?? new MockDataStore();
 
         public IDataStore<History> DataStore => DependencyService.Get<IDataStore<History>>() ?? new MockDataStore();
 

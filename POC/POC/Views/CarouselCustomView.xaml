@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+    xmlns         ="http://xamarin.com/schemas/2014/forms"
+    xmlns:x        ="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class        ="POC.Views.CarouselCustomView"
+    BackgroundColor="White">
+    <ContentView.Content>
+        <ScrollView>
+        <StackLayout
+            Margin="25">
+            <Label
+                Text ="{StaticResource Balance}"
+                Style="{StaticResource HeadingLabelStyle}" />
+            <!--  using grid for 5 static leave types, 
+            otherwise listview can be used for multiple leaves data -->
+            <Grid
+                Margin    ="0,10"
+                RowSpacing="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition
+                        Width="2*" />
+                    <ColumnDefinition
+                        Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition
+                        Height="*" />
+                    <RowDefinition
+                        Height="*" />
+                    <RowDefinition
+                        Height="*" />
+                    <RowDefinition
+                        Height="*" />
+                    <RowDefinition
+                        Height="*" />
+                </Grid.RowDefinitions>
+                <Label
+                    Grid.Column  ="0"
+                    Grid.Row     ="0"
+                    Style        ="{StaticResource DarkLabelStyle}"
+                    Text         ="{StaticResource CompOff}"
+                    HeightRequest="30" />
+                <Label
+                    Text       ="{Binding Leaves,StringFormat='{0} days'}"
+                    Style      ="{StaticResource DarkLabelStyle}"
+                    Grid.Column="1"
+                    Grid.Row   ="0" />
+                <BoxView
+                    Grid.Row       ="0"
+                    Grid.Column    ="0"
+                    Grid.ColumnSpan="2"
+                    Style          ="{StaticResource BoxViewStyle}"
+                    VerticalOptions="End" />
+                <Label
+                    Grid.Column="0"
+                    Grid.Row   ="1"
+                    Style      ="{StaticResource DarkLabelStyle}"
+                    Text       ="{StaticResource CasualLeave}" />
+                <Label
+                    Text       ="{Binding Leaves,StringFormat='{0} days'}"
+                    Style      ="{StaticResource DarkLabelStyle}"
+                    Grid.Column="1"
+                    Grid.Row   ="1" />
+                <BoxView
+                    Grid.Row       ="1"
+                    Grid.Column    ="0"
+                    Grid.ColumnSpan="2"
+                    Style          ="{StaticResource BoxViewStyle}"
+                    VerticalOptions="End" />
+                <Label
+                    Grid.Column="0"
+                    Grid.Row   ="2"
+                    Style      ="{StaticResource DarkLabelStyle}"
+                    Text       ="{StaticResource SickLeave}" />
+                <Label
+                    Text       ="{Binding Leaves,StringFormat='{0} days'}"
+                    Style      ="{StaticResource DarkLabelStyle}"
+                    Grid.Column="1"
+                    Grid.Row   ="2" />
+                <BoxView
+                    Grid.Row       ="2"
+                    Grid.Column    ="0"
+                    Grid.ColumnSpan="2"
+                    Style          ="{StaticResource BoxViewStyle}"
+                    VerticalOptions="End" />
+                <Label
+                    Grid.Column="0"
+                    Grid.Row   ="3"
+                    Style      ="{StaticResource DarkLabelStyle}"
+                    Text       ="{StaticResource Bereavement}" />
+                <Label
+                    Text       ="{Binding Leaves,StringFormat='{0} days'}"
+                    Style      ="{StaticResource DarkLabelStyle}"
+                    Grid.Column="1"
+                    Grid.Row   ="3" />
+                <BoxView
+                    Grid.Row       ="3"
+                    Grid.Column    ="0"
+                    Grid.ColumnSpan="2"
+                    Style          ="{StaticResource BoxViewStyle}"
+                    VerticalOptions="End" />
+                <Label
+                    Grid.Column="0"
+                    Grid.Row   ="4"
+                    Style      ="{StaticResource DarkLabelStyle}"
+                    Text       ="{StaticResource PaternityLeave}" />
+                <Label
+                    Text       ="{Binding Leaves,StringFormat='{0} days'}"
+                    Style      ="{StaticResource DarkLabelStyle}"
+                    Grid.Column="1"
+                    Grid.Row   ="4" />
+                <BoxView
+                    Grid.Row       ="4"
+                    Grid.Column    ="0"
+                    Grid.ColumnSpan="2"
+                    Style          ="{StaticResource BoxViewStyle}"
+                    VerticalOptions="End" />
+            </Grid>
+            <Label
+                Text ="{StaticResource Approvals}"
+                Style="{StaticResource HeadingLabelStyle}" />
+                  <Frame
+                            Margin      ="0,10"
+                            Padding     ="0"
+                            CornerRadius="6"
+                    BorderColor="LightGray"
+                    
+                            IsClippedToBounds="true">
+                            <Grid
+                                RowSpacing="0"
+                                Padding   ="0,0,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition
+                                        Width="10" />
+                                    <ColumnDefinition
+                                        Width="3*" />
+                                    <ColumnDefinition
+                                        Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition
+                                        Height="*" />
+                                    <RowDefinition
+                                        Height="1" />
+                                    <RowDefinition
+                                        Height="*" />
+                                    <RowDefinition
+                                        Height="*" />
+                                </Grid.RowDefinitions>
+                                <BoxView
+                                    Grid.Column    ="0"
+                                    Grid.RowSpan   ="4"
+                                    VerticalOptions="FillAndExpand"
+                                    BackgroundColor="{Binding GetColor}" />
+                                <Label
+                                    Grid.Column          ="1"
+                                    Grid.Row             ="0"
+                                    Style="{StaticResource DarkLabelStyle}"
+                                    Text                 ="{Binding Title}"
+                                    HeightRequest        ="30" />
+                                <Label
+                                    Text                 ="{Binding Leaves,StringFormat='{0} days'}"
+                                    Style="{StaticResource DarkLabelStyle}"
+                                    Grid.Column          ="2"
+                                    Grid.Row             ="0"
+                                    />
+                                <BoxView
+                                    Grid.Row       ="1"
+                                    Grid.Column    ="1"
+                                    Grid.ColumnSpan="2"
+                                    BackgroundColor="LightGray"
+                                    Opacity        ="0.5" />
+                                <Label
+                                    Text       ="{StaticResource From}"
+                                    Style      ="{StaticResource GrayLabelStyle}"
+                                    Font       ="12"
+                                    Grid.Column="1"
+                                    Grid.Row   ="2" />
+                                <Label
+                                    Text       ="{StaticResource To}"
+                                    Style      ="{StaticResource GrayLabelStyle}"
+                                    Font       ="12"
+                                    Grid.Column="2"
+                                    Grid.Row   ="2" />
+                                <Label
+                                    Text       ="{Binding FromDate}"
+                                    Grid.Column="1"
+                                    Grid.Row   ="3"
+                                    Margin     ="0,-6,0,0" />
+                                <Label
+                                    Text       ="{Binding ToDate}"
+                                    Grid.Column="2"
+                                    Grid.Row   ="3"
+                                    Margin     ="0,-6,0,0" />
+                            </Grid>
+                        </Frame>
+        </StackLayout>
+  </ScrollView>
+    </ContentView.Content>
+</ContentView>

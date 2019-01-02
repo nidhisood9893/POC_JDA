@@ -6,10 +6,10 @@ namespace POC.ViewModels
 {
     public class ItemDetailViewModel : BaseViewModel
     {
-        public Item Item { get; set; }
-        public ItemDetailViewModel(Item item = null)
+        public Leaves Item { get; set; }
+        public ItemDetailViewModel(Leaves item = null)
         {
-            Title = item?.Text;
+            Title = item?.EmployeeName;
             Item = item;
         }
     }

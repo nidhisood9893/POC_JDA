@@ -12,21 +12,16 @@ namespace POC.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {
-        public ObservableCollection<Item> Items { get; set; }
-        public Command LoadItemsCommand { get; set; }
+        public ObservableCollection<Leaves> Leaves { get; set; }
+        public ObservableCollection<CarouselCustomView> Views { get; set; }
 
         public ItemsViewModel()
         {
             Title = "EMP20148 \n Jon Doe";
-            Items = new ObservableCollection<Item>();
-            LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
+            Leaves = new ObservableCollection<Leaves>();
+            Views = new ObservableCollection<CarouselCustomView>();
 
-            MessagingCenter.Subscribe<NewItemPage, Item>(this, "AddItem", async (obj, item) =>
-            {
-                var newItem = item as Item;
-                Items.Add(newItem);
-                // await DataStore.AddItemAsync(newItem);
-            });
+            ExecuteLoadItemsCommand();
         }
 
         async Task ExecuteLoadItemsCommand()
@@ -38,11 +33,14 @@ namespace POC.ViewModels
 
             try
             {
-                Items.Clear();
-                var items = await DataStore.GetItemsAsync(true);
+                Leaves.Clear();
+                var items = await SummaryDataStore.GetLeavesSummaryAsync();
                 foreach (var item in items)
                 {
-                    // Items.Add(item);
+                    Leaves.Add(item);
+                    var carouselView = new CarouselCustomView();
+                    carouselView.BindingContext = item;
+                    Views.Add(carouselView); //new CarouselCustomView { leaves = item, Leaves = item, BindingContext = Leaves }
                 }
             }
             catch (Exception ex)
@@ -53,6 +51,15 @@ namespace POC.ViewModels
             {
                 IsBusy = false;
             }
+        }
+
+        /// <summary>
+        /// Position Selected action.
+        /// </summary>
+        /// <param name="obj">Object.</param>
+        private void PositionSelectedAction(object sender, CarouselView.FormsPlugin.Abstractions.PositionSelectedEventArgs e)
+        {
+
         }
     }
 }

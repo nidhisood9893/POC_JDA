@@ -6,24 +6,13 @@ using POC.Models;
 
 namespace POC.Services
 {
-    public class MockDataStore : IDataStore<History>
+    public class MockDataStore : IDataStore<History>, ISummaryDataStore<Leaves>
     {
-        List<Item> items;
+        List<Leaves> items;
         List<History> leavesHistory;
 
         public MockDataStore()
         {
-            //items = new List<Item>();
-            //var mockItems = new List<Item>
-            //{
-            //    new Item { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item description." },
-            //    new Item { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
-            //    new Item { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
-            //    new Item { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
-            //    new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
-            //    new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." },
-            //};
-
             leavesHistory = new List<History>();
             var mockLeaves = new List<History>
             {
@@ -76,17 +65,28 @@ namespace POC.Services
                 Status = ApprovalStatus.Rejected
             }
             };
-            //foreach (var item in mockItems)
-            //{
-            //    items.Add(item);
-            //}
-
             foreach (var item in mockLeaves)
             {
                 leavesHistory.Add(item);
             }
+
+            items = new List<Leaves>();
+            var mockItems = new List<Leaves>
+            {
+                new Leaves { Id = Guid.NewGuid().ToString(),EmployeeName="John Doe", CasualLeaves = 18,CompOffs=3, SickLeaves=12,BereavementLeaves=5,PaternityLeaves=5 },
+                new Leaves { Id = Guid.NewGuid().ToString(),EmployeeName="Mathew Gonsalves", CasualLeaves = 18,CompOffs=4, SickLeaves=5,BereavementLeaves=0,PaternityLeaves=6 },
+                new Leaves { Id = Guid.NewGuid().ToString(),EmployeeName="Nick", CasualLeaves = 18,CompOffs=2, SickLeaves=3,BereavementLeaves=6,PaternityLeaves=0 },
+                new Leaves { Id = Guid.NewGuid().ToString(), EmployeeName="Sam",CasualLeaves = 18,CompOffs=3, SickLeaves=7,BereavementLeaves=2,PaternityLeaves=0 },
+
+            };
+
+            foreach (var item in mockItems)
+            {
+                items.Add(item);
+            }
         }
 
+        #region IDataStore implementation
         public async Task<bool> AddItemAsync(History item)
         {
             leavesHistory.Add(item);
@@ -105,7 +105,7 @@ namespace POC.Services
 
         public async Task<bool> DeleteItemAsync(string id)
         {
-            var oldItem = items.Where((Item arg) => arg.Id == id).FirstOrDefault();
+            var oldItem = items.Where((Leaves arg) => arg.Id == id).FirstOrDefault();
             items.Remove(oldItem);
 
             return await Task.FromResult(true);
@@ -125,5 +125,13 @@ namespace POC.Services
         {
             return await Task.FromResult(leavesHistory);
         }
+        #endregion
+
+        #region ISummaryDataStore implementation
+        public async Task<IEnumerable<Leaves>> GetLeavesSummaryAsync()
+        {
+            return await Task.FromResult(items);
+        }
+        #endregion
     }
 }

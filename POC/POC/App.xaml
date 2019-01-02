@@ -5,6 +5,7 @@
     x:Class="POC.App">
     <Application.Resources>
         <ResourceDictionary>
+            
             <!--Global Strings-->
             <x:String
                 x:Key="Approved">Approved</x:String>
@@ -12,19 +13,38 @@
                 x:Key="Rejected">Rejected</x:String>
             <x:String
                 x:Key="Pending">Pending</x:String>
-             <x:String
+            <x:String
                 x:Key="From">From</x:String>
-             <x:String
+            <x:String
                 x:Key="To">To</x:String>
             <x:String
                 x:Key="ComingSoon">Coming Soon!</x:String>
-            <!--Global Styles-->
+            <x:String
+                x:Key="Balance">Leave Balance</x:String>
+            <x:String
+                x:Key="CasualLeave">Casual leaves</x:String>
+            <x:String
+                x:Key="CompOff">Comp Off</x:String>
+            <x:String
+                x:Key="SickLeave">Sick leaves</x:String>
+            <x:String
+                x:Key="Bereavement">Bereavement leaves</x:String>
+            <x:String
+                x:Key="PaternityLeave">Paternity leaves</x:String>
+          <x:String
+                x:Key="Approvals">Pending Approvals</x:String>
+            <!---->
+            
+            <!--Global Colors-->
             <Color
                 x:Key="PendingIndicator">#2196F3</Color>
             <Color
                 x:Key="RejectedIndicator">Red</Color>
             <Color
                 x:Key="NavigationColor">#168a8e</Color>
+            <!---->
+          
+            <!--Global Styles-->
             <Style
                 TargetType="NavigationPage">
                 <Setter
@@ -66,13 +86,41 @@
                     Property="VerticalTextAlignment"
                     Value   ="Center" />
             </Style>
-            
-             <Style
-                x:Key     ="DarkLabelStyle"
+            <Style
+                x:Key     ="TitleLabelStyle"
                 TargetType="Label">
                 <Setter
                     Property="TextColor"
                     Value   ="Black" />
+                <Setter
+                    Property="VerticalOptions"
+                    Value   ="CenterAndExpand" />
+                <Setter
+                    Property="Font"
+                    Value   ="18" />
+            </Style>
+             <Style
+                x:Key     ="HeadingLabelStyle"
+                TargetType="Label">
+                <Setter
+                    Property="TextColor"
+                    Value   ="Black" />
+                <Setter
+                    Property="VerticalOptions"
+                    Value   ="Start" />
+                <Setter
+                    Property="Font"
+                    Value   ="18" />
+                <Setter
+                    Property="FontAttributes"
+                    Value   ="Bold" />
+            </Style>
+            <Style
+                x:Key     ="DarkLabelStyle"
+                TargetType="Label">
+                <Setter
+                    Property="TextColor"
+                    Value   ="#383838" />
                 <Setter
                     Property="VerticalOptions"
                     Value   ="CenterAndExpand" />
@@ -83,7 +131,6 @@
                     Property="VerticalTextAlignment"
                     Value   ="Center" />
             </Style>
-            
             <Style
                 x:Key     ="DotButton"
                 TargetType="Button">
@@ -99,6 +146,18 @@
                 <Setter
                     Property="CornerRadius"
                     Value   ="6" />
+            </Style>
+            
+            <Style x:Key="BoxViewStyle" TargetType="BoxView">
+                <Setter
+                    Property="BackgroundColor"
+                    Value   ="LightGray" />
+                 <Setter
+                    Property="HeightRequest"
+                    Value   ="1" />
+                <Setter
+                    Property="Opacity"
+                    Value   ="0.5" />
             </Style>
         </ResourceDictionary>
     </Application.Resources>

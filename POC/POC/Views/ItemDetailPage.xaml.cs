@@ -24,10 +24,10 @@ namespace POC.Views
         {
             InitializeComponent();
 
-            var item = new Item
+            var item = new Leaves
             {
-                Text = "Item 1",
-                Description = "This is an item description."
+                CasualLeaves = 3,
+                SickLeaves = 1
             };
 
             viewModel = new ItemDetailViewModel(item);

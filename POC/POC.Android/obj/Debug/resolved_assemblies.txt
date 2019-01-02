@@ -1,6 +1,4 @@
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/POC.Android.dll
-/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/BadgeView.Android.dll
-/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/BadgeView.Shared.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/CarouselView.FormsPlugin.Abstractions.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/CarouselView.FormsPlugin.Android.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/Com.Android.DeskClock.dll
@@ -9,6 +7,8 @@
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/Java.Interop.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/Mono.Android.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/mscorlib.dll
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/Plugin.Badge.Abstractions.dll
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/Plugin.Badge.Droid.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/System.Core.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/System.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/System.Net.Http.dll
@@ -55,7 +55,6 @@
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/System.Web.Services.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/System.Xml.XPath.XDocument.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/System.Runtime.dll
-/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/System.Diagnostics.Tools.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/System.Diagnostics.Debug.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/System.Threading.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/System.Collections.dll

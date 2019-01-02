@@ -11,16 +11,16 @@ namespace POC.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NewItemPage : ContentPage
     {
-        public Item Item { get; set; }
+        public Leaves Item { get; set; }
 
         public NewItemPage()
         {
             InitializeComponent();
 
-            Item = new Item
+            Item = new Leaves
             {
-                Text = "Item name",
-                Description = "This is an item description."
+                CasualLeaves = 5,
+                SickLeaves = 2
             };
 
             BindingContext = this;

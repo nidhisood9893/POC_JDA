@@ -14,4 +14,9 @@ namespace POC.Services
 
         Task<IEnumerable<T>> GetLeavesAsync();
     }
+
+    public interface ISummaryDataStore<T>
+    {
+        Task<IEnumerable<T>> GetLeavesSummaryAsync();
+    }
 }
