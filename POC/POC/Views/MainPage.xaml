@@ -11,15 +11,8 @@
     BarBackgroundColor="White"
    >
     <TabbedPage.ToolbarItems >
-       <!-- <badge:BadgeView Text="1" BadgeColor="Red">
-            
-        </badge:BadgeView>-->
-       
-                <ToolbarItem  Icon="bell" Command="{Binding ToolbarItemCommand}">
-          <!--  <plugin:TabBadge.BadgeText>2</plugin:TabBadge.BadgeText>
-        <plugin:TabBadge.BadgeColor>Red</plugin:TabBadge.BadgeColor>-->
-        </ToolbarItem>
-           <ToolbarItem Icon="logout" Command="{Binding ToolbarItemCommand}"/>
+      <ToolbarItem  Icon="bell" Command="{Binding ToolbarItemCommand}" />
+       <ToolbarItem Icon="logout" Command="{Binding ToolbarItemCommand}"/>
     </TabbedPage.ToolbarItems>
     <TabbedPage.Children>
         <NavigationPage

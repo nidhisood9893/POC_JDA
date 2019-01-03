@@ -3103,6 +3103,7 @@ containing a value of this type.
         public static final int notification_subtext_size=0x7f0800a1;
         public static final int notification_top_pad=0x7f0800a2;
         public static final int notification_top_pad_large_text=0x7f0800a3;
+        public static final int textsize_badge_count=0x7f0800a6;
         public static final int tooltip_corner_radius=0x7f080062;
         public static final int tooltip_horizontal_padding=0x7f080063;
         public static final int tooltip_margin=0x7f080064;

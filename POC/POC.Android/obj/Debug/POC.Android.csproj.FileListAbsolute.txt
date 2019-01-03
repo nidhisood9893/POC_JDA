@@ -4,6 +4,8 @@
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/bin/Debug/com.companyname.POC-Signed.apk
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/res.flag
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/App.xaml.g.cs
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/Views/ApplyPage.xaml.g.cs
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/Views/CarouselCustomView.xaml.g.cs
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/Views/MainPage.xaml.g.cs
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/Views/AboutPage.xaml.g.cs
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/Views/ItemDetailPage.xaml.g.cs
@@ -35,13 +37,12 @@
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/res/drawable/bell.png
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/res/drawable/logout.png
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/res/drawable/tab_apply.png
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/res/drawable/tab_history.png
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/res/values/dimens.xml
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/R.cs.flag
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/R.txt
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/uploadflags.txt
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/POC.Android.csprojAssemblyReference.cache
-/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/Views/ApplyPage.xaml.g.cs
-/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/Views/CarouselCustomView.xaml.g.cs
-/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/res/drawable/tab_history.png
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/bin/Debug/Mono.Android.pdb
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/bin/Debug/Plugin.Badge.Abstractions.pdb
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/linksrc/POC.Android.pdb

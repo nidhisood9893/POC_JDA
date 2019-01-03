@@ -10,7 +10,10 @@ namespace POC
 
         public MainViewModel(MainPage mainPage)
         {
-            ToolbarItemCommand = new Command(() => mainPage.DisplayAlert("POC", "Coming Soon!", "Ok"));
+            ToolbarItemCommand = new Command(() =>
+            {
+                mainPage.DisplayAlert("POC", "Coming Soon!", "Ok");
+            });
         }
     }
 }

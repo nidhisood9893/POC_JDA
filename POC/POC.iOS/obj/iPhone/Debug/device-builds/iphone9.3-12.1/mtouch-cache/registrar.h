@@ -50,6 +50,8 @@
 @class __UIPanGestureRecognizer;
 @class __UIPinchGestureRecognizer;
 @class UIKit_UINavigationBar_UINavigationBarAppearance;
+@class UIKit_UIPageViewController__UIPageViewControllerDelegate;
+@class UIKit_UIPageViewController__UIPageViewControllerDataSource;
 @class UIKit_UISearchBar__UISearchBarDelegate;
 @class UIKit_UITextField__UITextFieldDelegate;
 @class UIKit_UIScrollView__UIScrollViewDelegate;
@@ -136,6 +138,11 @@
 @class Xamarin_Forms_Platform_iOS_NavigationMenuRenderer_DataSource;
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer_SecondaryToolbar;
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer_ParentingViewController;
+@class CarouselView_FormsPlugin_iOS_ViewContainer;
+@class CarouselView_FormsPlugin_iOS_CarouselViewRenderer;
+@class Syncfusion_XForms_iOS_BadgeView_BadgeRenderer;
+@class Syncfusion_XForms_iOS_BadgeView_SfBadgeView;
+@class Syncfusion_XForms_iOS_BadgeView_SfBadgeViewRenderer;
 
 @interface UIApplicationDelegate : NSObject<UIApplicationDelegate> {
 }
@@ -599,6 +606,41 @@
 @interface Xamarin_Forms_Platform_iOS_ImageButtonRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
 }
 	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(id) init;
+@end
+
+@interface CarouselView_FormsPlugin_iOS_ViewContainer : UIViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface CarouselView_FormsPlugin_iOS_CarouselViewRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
+}
+	-(void) didMoveToSuperview;
+	-(void) didMoveToWindow;
+	-(id) init;
+@end
+
+@interface Syncfusion_XForms_iOS_BadgeView_SfBadgeView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(CGRect) frame;
+	-(void) setFrame:(CGRect)p0;
+	-(void) layoutSubviews;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Syncfusion_XForms_iOS_BadgeView_SfBadgeViewRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
+}
 	-(id) init;
 @end
 

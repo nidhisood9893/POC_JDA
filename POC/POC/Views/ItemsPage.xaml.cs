@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using POC.Models;
@@ -16,10 +15,18 @@ namespace POC.Views
         {
             InitializeComponent();
 
-            BindingContext = viewModel = new ItemsViewModel();
+            BindingContext = viewModel = new ItemsViewModel(this);
 
         }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
 
+            if (App.ToolbarItems?.Count > 0)
+            {
+                DependencyService.Get<IToolbarItemBadge>().SetBadge(App.ToolbarItems, this, App.ToolbarItems[1], "1", Color.LightSeaGreen, Color.White);
+            }
+        }
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
             var item = args.SelectedItem as Leaves;
@@ -38,6 +45,8 @@ namespace POC.Views
             {
                 Title = viewModel.Leaves[e.NewValue].EmployeeName;
             }
+
+
         }
     }
 }

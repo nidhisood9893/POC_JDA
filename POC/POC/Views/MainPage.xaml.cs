@@ -1,8 +1,6 @@
-﻿using System;
-
+﻿using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
 
 namespace POC
 {
@@ -12,8 +10,18 @@ namespace POC
         public MainPage()
         {
             InitializeComponent();
-            //On<Xamarin.Forms.PlatformConfiguration.Android>().SetToolbarPlacement(toolbar, Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ToolbarPlacement.Bottom);
+
             BindingContext = new MainViewModel(this);
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            App.ToolbarItems = ToolbarItems;
+            if (ToolbarItems.Count > 0)
+            {
+                // DependencyService.Get<IToolbarItemBadge>().SetBadge(this, ToolbarItems[0], "1", (Color)Application.Current.Resources["BadgeColor"], Color.White);
+            }
         }
     }
 }

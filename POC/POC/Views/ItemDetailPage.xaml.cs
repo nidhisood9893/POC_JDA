@@ -20,6 +20,12 @@ namespace POC.Views
             BindingContext = this.viewModel = viewModel;
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+        }
+
         public ItemDetailPage()
         {
             InitializeComponent();

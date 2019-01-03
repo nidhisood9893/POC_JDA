@@ -23,5 +23,13 @@ namespace POC.Droid
 
             LoadApplication(new App());
         }
+        public override bool OnPrepareOptionsMenu(IMenu menu)
+        {
+            return base.OnPrepareOptionsMenu(menu);
+        }
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            return base.OnCreateOptionsMenu(menu);
+        }
     }
 }

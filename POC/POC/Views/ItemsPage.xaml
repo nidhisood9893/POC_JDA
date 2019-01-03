@@ -7,14 +7,9 @@
     xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
     Title         ="{Binding Title}"
     x:Name        ="SummaryPage">
-    <!--<ContentPage.ToolbarItems>
-                <ToolbarItem Text="Add" Clicked="AddItem_Clicked">
-            <ToolbarItem.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="UWP" Value="add.png"/>
-                </OnPlatform>
-            </ToolbarItem.Icon>
-        </ToolbarItem>
+    <!--<ContentPage.ToolbarItems >
+      <ToolbarItem  Icon="bell" Command="{Binding ToolbarItemCommand}" Order="Primary" Text="Item 1" Priority="0"/>
+       <ToolbarItem Icon="logout" Command="{Binding ToolbarItemCommand}"/>
     </ContentPage.ToolbarItems>-->
     <ContentPage.Content>
         <controls:CarouselViewControl

@@ -9,6 +9,7 @@
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/mscorlib.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/Plugin.Badge.Abstractions.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/Plugin.Badge.Droid.dll
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/Plugin.CurrentActivity.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/System.Core.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/System.dll
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/android/assets/System.Net.Http.dll

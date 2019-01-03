@@ -11,13 +11,17 @@ namespace POC.ViewModels
     public class AboutViewModel : BaseViewModel
     {
         public ObservableCollection<History> LeavesHistory { get; set; }
+        public ICommand ToolbarItemCommand { get; }
 
-        public AboutViewModel()
+        public AboutViewModel(Views.AboutPage aboutPage)
         {
             Title = "EMP20148 \n Jon Doe";
             LeavesHistory = new ObservableCollection<History>();
             ExecuteLoadItemsCommand();
-            OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
+            ToolbarItemCommand = new Command(() =>
+            {
+                aboutPage.DisplayAlert("POC", "Coming Soon!", "Ok");
+            });
         }
 
         /// <summary>
@@ -66,8 +70,6 @@ namespace POC.ViewModels
                 Status = ApprovalStatus.Approved
             });
         }
-
-        public ICommand OpenWebCommand { get; }
 
         async Task ExecuteLoadItemsCommand()
         {

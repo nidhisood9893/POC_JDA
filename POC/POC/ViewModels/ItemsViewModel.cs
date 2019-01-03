@@ -2,9 +2,10 @@
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
-
+using System.Windows.Input;
 using POC.Models;
 using POC.Views;
+using Xamarin.Forms;
 
 namespace POC.ViewModels
 {
@@ -12,13 +13,17 @@ namespace POC.ViewModels
     {
         public ObservableCollection<Leaves> Leaves { get; set; }
         public ObservableCollection<CarouselCustomView> Views { get; set; }
+        public ICommand ToolbarItemCommand { get; }
 
-        public ItemsViewModel()
+        public ItemsViewModel(ItemsPage itemsPage)
         {
             Title = "EMP20148 \n Jon Doe";
             Leaves = new ObservableCollection<Leaves>();
             Views = new ObservableCollection<CarouselCustomView>();
-
+            ToolbarItemCommand = new Command(() =>
+            {
+                itemsPage.DisplayAlert("POC", "Coming Soon!", "Ok");
+            });
             ExecuteLoadItemsCommand();
         }
 

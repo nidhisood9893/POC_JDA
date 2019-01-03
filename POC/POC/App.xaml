@@ -42,6 +42,7 @@
                 x:Key="NavigationColor">#168a8e</Color>
             <Color
                 x:Key="TintColor">#FFCC33</Color>
+            <Color x:Key="BadgeColor">#25BA91</Color>
             <!---->
             <!--Global Styles-->
             <Style
@@ -163,14 +164,15 @@
                 x:Key     ="FrameStyle"
                 TargetType="Frame">
                 <Setter
-                    Property="BorderColor">
-                    <Setter.Value>
+                    Property="BorderColor"
+                    Value="LightGray">
+                  <!--  <Setter.Value>
                         <OnPlatform
                             x:TypeArguments="Color">
                             <On
                                 Platform="Android">LightGray</On>
                         </OnPlatform>
-                    </Setter.Value>
+                    </Setter.Value>-->
                 </Setter>
                 <Setter
                     Property="Padding"

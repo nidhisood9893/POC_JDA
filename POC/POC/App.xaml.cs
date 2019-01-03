@@ -8,7 +8,7 @@ namespace POC
 {
     public partial class App : Application
     {
-
+        public static System.Collections.Generic.IList<ToolbarItem> ToolbarItems { get; set; }
         public App()
         {
             InitializeComponent();

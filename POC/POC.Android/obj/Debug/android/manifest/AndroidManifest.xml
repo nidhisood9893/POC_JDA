@@ -5,7 +5,7 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-  <application android:label="POC.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
+  <application android:label="POC.Android" android:debuggable="true" android:name="md565d09d7a2db690ccfe8339446820d050.MainApplication" android:allowBackup="true" android:icon="@mipmap/icon">
     <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="POC" android:theme="@style/MainTheme" android:name="md565d09d7a2db690ccfe8339446820d050.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

@@ -3103,6 +3103,7 @@ containing a value of this type.
         public static int notification_subtext_size=0x7f0800a1;
         public static int notification_top_pad=0x7f0800a2;
         public static int notification_top_pad_large_text=0x7f0800a3;
+        public static int textsize_badge_count=0x7f0800a6;
         public static int tooltip_corner_radius=0x7f080062;
         public static int tooltip_horizontal_padding=0x7f080063;
         public static int tooltip_margin=0x7f080064;
@@ -3197,13 +3198,13 @@ containing a value of this type.
         public static int abc_textfield_search_material=0x7f020051;
         public static int abc_vector_test=0x7f020052;
         public static int avd_hide_password=0x7f020053;
-        public static int avd_hide_password_1=0x7f020138;
-        public static int avd_hide_password_2=0x7f020139;
-        public static int avd_hide_password_3=0x7f02013a;
+        public static int avd_hide_password_1=0x7f020139;
+        public static int avd_hide_password_2=0x7f02013a;
+        public static int avd_hide_password_3=0x7f02013b;
         public static int avd_show_password=0x7f020054;
-        public static int avd_show_password_1=0x7f02013b;
-        public static int avd_show_password_2=0x7f02013c;
-        public static int avd_show_password_3=0x7f02013d;
+        public static int avd_show_password_1=0x7f02013c;
+        public static int avd_show_password_2=0x7f02013d;
+        public static int avd_show_password_3=0x7f02013e;
         public static int bell=0x7f020055;
         public static int design_bottom_navigation_item_background=0x7f020056;
         public static int design_fab_background=0x7f020057;
@@ -3420,17 +3421,18 @@ containing a value of this type.
         public static int notification_bg_normal=0x7f02012a;
         public static int notification_bg_normal_pressed=0x7f02012b;
         public static int notification_icon_background=0x7f02012c;
-        public static int notification_template_icon_bg=0x7f020136;
-        public static int notification_template_icon_low_bg=0x7f020137;
+        public static int notification_template_icon_bg=0x7f020137;
+        public static int notification_template_icon_low_bg=0x7f020138;
         public static int notification_tile_bg=0x7f02012d;
         public static int notify_panel_notification_icon_bg=0x7f02012e;
         public static int prev=0x7f02012f;
         public static int tab_apply=0x7f020130;
         public static int tab_feed=0x7f020131;
-        public static int tooltip_frame_dark=0x7f020132;
-        public static int tooltip_frame_light=0x7f020133;
-        public static int up=0x7f020134;
-        public static int xamarin_logo=0x7f020135;
+        public static int tab_history=0x7f020132;
+        public static int tooltip_frame_dark=0x7f020133;
+        public static int tooltip_frame_light=0x7f020134;
+        public static int up=0x7f020135;
+        public static int xamarin_logo=0x7f020136;
     }
     public static final class id {
         public static int ALT=0x7f090032;

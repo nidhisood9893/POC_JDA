@@ -674,6 +674,7 @@ int dimen notification_small_icon_size_as_large 0x7f0800a0
 int dimen notification_subtext_size 0x7f0800a1
 int dimen notification_top_pad 0x7f0800a2
 int dimen notification_top_pad_large_text 0x7f0800a3
+int dimen textsize_badge_count 0x7f0800a6
 int dimen tooltip_corner_radius 0x7f080062
 int dimen tooltip_horizontal_padding 0x7f080063
 int dimen tooltip_margin 0x7f080064

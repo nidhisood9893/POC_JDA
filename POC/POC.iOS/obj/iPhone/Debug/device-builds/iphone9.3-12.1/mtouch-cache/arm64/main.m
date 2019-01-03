@@ -2,7 +2,7 @@
 
 extern void *mono_aot_module_POC_iOS_info;
 extern void *mono_aot_module_mscorlib_info;
-extern void *mono_aot_module_Xamarin_Forms_Xaml_info;
+extern void *mono_aot_module_Xamarin_Forms_Core_info;
 extern void *mono_aot_module_System_Core_info;
 extern void *mono_aot_module_System_info;
 extern void *mono_aot_module_Mono_Security_info;
@@ -16,15 +16,21 @@ extern void *mono_aot_module_System_Runtime_Serialization_info;
 extern void *mono_aot_module_System_ServiceModel_Internals_info;
 extern void *mono_aot_module_System_Web_Services_info;
 extern void *mono_aot_module_System_Xml_Linq_info;
-extern void *mono_aot_module_Xamarin_Forms_Core_info;
 extern void *mono_aot_module_Xamarin_Forms_Platform_info;
 extern void *mono_aot_module_Xamarin_Forms_Platform_iOS_info;
+extern void *mono_aot_module_Xamarin_Forms_Xaml_info;
+extern void *mono_aot_module_CarouselView_FormsPlugin_Abstractions_info;
+extern void *mono_aot_module_CarouselView_FormsPlugin_iOS_info;
+extern void *mono_aot_module_Syncfusion_SfBadgeView_XForms_iOS_info;
+extern void *mono_aot_module_Syncfusion_SfBadgeView_XForms_info;
+extern void *mono_aot_module_Syncfusion_Core_XForms_info;
+extern void *mono_aot_module_Syncfusion_Licensing_info;
 
 void xamarin_register_modules_impl ()
 {
 	mono_aot_register_module (mono_aot_module_POC_iOS_info);
 	mono_aot_register_module (mono_aot_module_mscorlib_info);
-	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Xaml_info);
+	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Core_info);
 	mono_aot_register_module (mono_aot_module_System_Core_info);
 	mono_aot_register_module (mono_aot_module_System_info);
 	mono_aot_register_module (mono_aot_module_Mono_Security_info);
@@ -38,9 +44,15 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_System_ServiceModel_Internals_info);
 	mono_aot_register_module (mono_aot_module_System_Web_Services_info);
 	mono_aot_register_module (mono_aot_module_System_Xml_Linq_info);
-	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Core_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Platform_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Platform_iOS_info);
+	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Xaml_info);
+	mono_aot_register_module (mono_aot_module_CarouselView_FormsPlugin_Abstractions_info);
+	mono_aot_register_module (mono_aot_module_CarouselView_FormsPlugin_iOS_info);
+	mono_aot_register_module (mono_aot_module_Syncfusion_SfBadgeView_XForms_iOS_info);
+	mono_aot_register_module (mono_aot_module_Syncfusion_SfBadgeView_XForms_info);
+	mono_aot_register_module (mono_aot_module_Syncfusion_Core_XForms_info);
+	mono_aot_register_module (mono_aot_module_Syncfusion_Licensing_info);
 
 }
 
@@ -48,6 +60,10 @@ void xamarin_register_assemblies_impl ()
 {
 	guint32 exception_gchandle = 0;
 	xamarin_open_and_register ("Xamarin.Forms.Platform.iOS.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("CarouselView.FormsPlugin.iOS.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("Syncfusion.SfBadgeView.XForms.iOS.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 
 }

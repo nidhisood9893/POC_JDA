@@ -4,6 +4,8 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using Syncfusion.XForms.iOS.BadgeView;
+using Syncfusion.XForms.BadgeView;
 
 namespace POC.iOS
 {
@@ -25,6 +27,7 @@ namespace POC.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
             CarouselView.FormsPlugin.iOS.CarouselViewRenderer.Init();
+            SfBadgeViewRenderer.Init();
             return base.FinishedLaunching(app, options);
         }
     }

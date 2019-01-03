@@ -114,6 +114,7 @@ class MonoPackageManager_Resources {
 		"FormsViewGroup.dll",
 		"Plugin.Badge.Abstractions.dll",
 		"Plugin.Badge.Droid.dll",
+		"Plugin.CurrentActivity.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Runtime.dll",

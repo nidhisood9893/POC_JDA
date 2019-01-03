@@ -33,6 +33,18 @@
           "lib/MonoAndroid10/Plugin.Badge.Droid.dll": {}
         }
       },
+      "Plugin.CurrentActivity/2.1.0.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid44/Plugin.CurrentActivity.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid44/Plugin.CurrentActivity.dll": {}
+        }
+      },
       "Xamarin.Android.Arch.Core.Common/1.0.0.1": {
         "type": "package",
         "dependencies": {
@@ -458,6 +470,18 @@
         "lib/xamarinmac20/Plugin.Badge.Mac.dll",
         "plugin.badge.2.1.0.nupkg.sha512",
         "plugin.badge.nuspec"
+      ]
+    },
+    "Plugin.CurrentActivity/2.1.0.4": {
+      "sha512": "m8xaXvXUzBSqP6xRe5PeIG347WxsG/VWrZta7MnPpSvNuPf0RLB/S49UCCQyBKSsfu053+apvYm14BC7GU6Zzg==",
+      "type": "package",
+      "path": "plugin.currentactivity/2.1.0.4",
+      "files": [
+        "lib/monoandroid44/Plugin.CurrentActivity.dll",
+        "lib/monoandroid44/Plugin.CurrentActivity.xml",
+        "plugin.currentactivity.2.1.0.4.nupkg.sha512",
+        "plugin.currentactivity.nuspec",
+        "readme.txt"
       ]
     },
     "Xamarin.Android.Arch.Core.Common/1.0.0.1": {
@@ -890,6 +914,7 @@
     "MonoAndroid,Version=v8.1": [
       "CarouselView.FormsPlugin >= 5.2.0",
       "Plugin.Badge >= 2.1.0",
+      "Plugin.CurrentActivity >= 2.1.0.4",
       "Xamarin.Android.Support.Design >= 27.0.2.1",
       "Xamarin.Android.Support.v4 >= 27.0.2.1",
       "Xamarin.Android.Support.v7.AppCompat >= 27.0.2.1",
@@ -924,6 +949,12 @@
         "monoandroid81": {
           "projectReferences": {}
         }
+      }
+    },
+    "dependencies": {
+      "Plugin.CurrentActivity": {
+        "target": "Package",
+        "version": "[2.1.0.4, )"
       }
     },
     "frameworks": {

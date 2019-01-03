@@ -54,6 +54,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\CarouselCustomView.xaml.cs">
       <DependentUpon>CarouselCustomView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IToolbarItemBadge.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml">
