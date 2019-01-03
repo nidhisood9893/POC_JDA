@@ -6,6 +6,7 @@ using POC.Models;
 
 namespace POC.Services
 {
+    // hard coded data values
     public class MockDataStore : IDataStore<History>, ISummaryDataStore<Leaves>
     {
         List<Leaves> items;
@@ -73,12 +74,19 @@ namespace POC.Services
             items = new List<Leaves>();
             var mockItems = new List<Leaves>
             {
-                new Leaves { Id = Guid.NewGuid().ToString(),EmployeeName="John Doe", CasualLeaves = 18,CompOffs=3, SickLeaves=12,BereavementLeaves=5,PaternityLeaves=5 },
-                new Leaves { Id = Guid.NewGuid().ToString(),EmployeeName="Mathew Gonsalves", CasualLeaves = 18,CompOffs=4, SickLeaves=5,BereavementLeaves=0,PaternityLeaves=6 },
-                new Leaves { Id = Guid.NewGuid().ToString(),EmployeeName="Nick", CasualLeaves = 18,CompOffs=2, SickLeaves=3,BereavementLeaves=6,PaternityLeaves=0 },
-                new Leaves { Id = Guid.NewGuid().ToString(), EmployeeName="Sam",CasualLeaves = 18,CompOffs=3, SickLeaves=7,BereavementLeaves=2,PaternityLeaves=0 },
-
-            };
+                new Leaves { Id = Guid.NewGuid().ToString(),EmployeeName="John Doe", CasualLeaves = 18,CompOffs=3,
+                    SickLeaves=12,BereavementLeaves=5,PaternityLeaves=5,PendingApprovals=3,
+                    PendingLeaveType="Casual Leave",FromDate="22 Aug 2018", ToDate="24 Aug 2018" },
+                new Leaves { Id = Guid.NewGuid().ToString(),EmployeeName="Mathew Gonsalves", CasualLeaves = 18,CompOffs=4,
+                    SickLeaves=5,BereavementLeaves=0,PaternityLeaves=6,PendingApprovals=2,
+                    PendingLeaveType="Casual Leave",FromDate="2 Nov 2018", ToDate="3 Nov 2018" },
+                new Leaves { Id = Guid.NewGuid().ToString(),EmployeeName="Nick", CasualLeaves = 18,CompOffs=2,
+                    SickLeaves=3,BereavementLeaves=6,PaternityLeaves=0 ,PendingApprovals=1,
+                    PendingLeaveType="Sick Leave",FromDate="10 Aug 2018", ToDate="10 Aug 2018"},
+                new Leaves { Id = Guid.NewGuid().ToString(), EmployeeName="Sam",CasualLeaves = 18,CompOffs=3,
+                    SickLeaves=7,BereavementLeaves=2,PaternityLeaves=0 ,PendingApprovals=5,
+                    PendingLeaveType="Paternity Leave",FromDate="18 Oct 2018", ToDate="22 Oct 2018"},
+             };
 
             foreach (var item in mockItems)
             {

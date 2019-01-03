@@ -3,8 +3,6 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-using Xamarin.Forms;
-
 using POC.Models;
 using POC.Views;
 
@@ -51,15 +49,6 @@ namespace POC.ViewModels
             {
                 IsBusy = false;
             }
-        }
-
-        /// <summary>
-        /// Position Selected action.
-        /// </summary>
-        /// <param name="obj">Object.</param>
-        private void PositionSelectedAction(object sender, CarouselView.FormsPlugin.Abstractions.PositionSelectedEventArgs e)
-        {
-
         }
     }
 }

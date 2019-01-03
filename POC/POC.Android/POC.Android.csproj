@@ -117,6 +117,7 @@
     <AndroidResource Include="Resources\drawable\bell.png" />
     <AndroidResource Include="Resources\drawable\logout.png" />
     <AndroidResource Include="Resources\drawable\tab_apply.png" />
+    <AndroidResource Include="Resources\drawable\tab_history.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />

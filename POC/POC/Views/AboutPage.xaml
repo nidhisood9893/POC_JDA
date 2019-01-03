@@ -72,10 +72,7 @@
                 <DataTemplate>
                     <ViewCell>
                         <Frame
-                            Margin      ="20,10"
-                            Padding     ="0"
-                            CornerRadius="6"
-                            IsClippedToBounds="true">
+                            Style="{StaticResource FrameStyle}">
                             <Grid
                                 RowSpacing="0"
                                 Padding   ="0,0,0,0">

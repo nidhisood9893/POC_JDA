@@ -926,12 +926,6 @@
         }
       }
     },
-    "dependencies": {
-      "Plugin.Badge": {
-        "target": "Package",
-        "version": "[2.1.0, )"
-      }
-    },
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
@@ -962,6 +956,10 @@
           "Xamarin.Android.Support.v7.MediaRouter": {
             "target": "Package",
             "version": "27.0.2.1"
+          },
+          "Plugin.Badge": {
+            "target": "Package",
+            "version": "2.1.0"
           }
         }
       }

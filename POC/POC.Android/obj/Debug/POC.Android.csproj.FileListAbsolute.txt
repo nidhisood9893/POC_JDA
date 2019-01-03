@@ -41,6 +41,7 @@
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/POC.Android.csprojAssemblyReference.cache
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/Views/ApplyPage.xaml.g.cs
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/Views/CarouselCustomView.xaml.g.cs
+/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/res/drawable/tab_history.png
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/bin/Debug/Mono.Android.pdb
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/bin/Debug/Plugin.Badge.Abstractions.pdb
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/linksrc/POC.Android.pdb

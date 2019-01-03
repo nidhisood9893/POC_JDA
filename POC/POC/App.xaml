@@ -5,7 +5,6 @@
     x:Class="POC.App">
     <Application.Resources>
         <ResourceDictionary>
-            
             <!--Global Strings-->
             <x:String
                 x:Key="Approved">Approved</x:String>
@@ -31,10 +30,9 @@
                 x:Key="Bereavement">Bereavement leaves</x:String>
             <x:String
                 x:Key="PaternityLeave">Paternity leaves</x:String>
-          <x:String
+            <x:String
                 x:Key="Approvals">Pending Approvals</x:String>
             <!---->
-            
             <!--Global Colors-->
             <Color
                 x:Key="PendingIndicator">#2196F3</Color>
@@ -42,8 +40,9 @@
                 x:Key="RejectedIndicator">Red</Color>
             <Color
                 x:Key="NavigationColor">#168a8e</Color>
+            <Color
+                x:Key="TintColor">#FFCC33</Color>
             <!---->
-          
             <!--Global Styles-->
             <Style
                 TargetType="NavigationPage">
@@ -99,7 +98,7 @@
                     Property="Font"
                     Value   ="18" />
             </Style>
-             <Style
+            <Style
                 x:Key     ="HeadingLabelStyle"
                 TargetType="Label">
                 <Setter
@@ -147,17 +146,81 @@
                     Property="CornerRadius"
                     Value   ="6" />
             </Style>
-            
-            <Style x:Key="BoxViewStyle" TargetType="BoxView">
+            <Style
+                x:Key     ="BoxViewStyle"
+                TargetType="BoxView">
                 <Setter
                     Property="BackgroundColor"
                     Value   ="LightGray" />
-                 <Setter
+                <Setter
                     Property="HeightRequest"
                     Value   ="1" />
                 <Setter
                     Property="Opacity"
                     Value   ="0.5" />
+            </Style>
+            <Style
+                x:Key     ="FrameStyle"
+                TargetType="Frame">
+                <Setter
+                    Property="BorderColor">
+                    <Setter.Value>
+                        <OnPlatform
+                            x:TypeArguments="Color">
+                            <On
+                                Platform="Android">LightGray</On>
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+                <Setter
+                    Property="Padding"
+                    Value   ="0" />
+                <Setter
+                    Property="Margin"
+                    Value   ="20,10" />
+                <Setter
+                    Property="CornerRadius"
+                    Value   ="6" />
+                <Setter
+                    Property="IsClippedToBounds"
+                    Value   ="true" />
+            </Style>
+            <Style
+                x:Key     ="LabelButtonStyle"
+                TargetType="Button">
+                <Setter
+                    Property="BackgroundColor"
+                    Value   ="White" />
+                <Setter
+                    Property="HeightRequest"
+                    Value   ="30" />
+                <Setter
+                    Property="WidthRequest"
+                    Value   ="30" />
+                <Setter
+                    Property="BorderColor"
+                    Value   ="Silver" />
+                <Setter
+                    Property="BorderWidth"
+                    Value   ="1" />
+                <Setter
+                    Property="CornerRadius"
+                    Value   ="15" />
+                <Setter
+                    Property="TextColor"
+                    Value   ="{StaticResource NavigationColor}" />
+                <Setter
+                    Property="VerticalOptions"
+                    Value   ="CenterAndExpand" />
+                <Setter
+                    Property="HorizontalOptions"
+                    Value   ="EndAndExpand" />
+                <Setter
+                    Property="Margin"
+                    Value   ="10" />
+                <Setter
+                    Property="Padding"
+                    Value   ="0" />
             </Style>
         </ResourceDictionary>
     </Application.Resources>

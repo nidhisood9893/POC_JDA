@@ -12,5 +12,8 @@ namespace POC.Models
         public int BereavementLeaves { get; set; }
         public int PaternityLeaves { get; set; }
         public int PendingApprovals { get; set; }
+        public string PendingLeaveType { get; set; }
+        public string ToDate { get; set; }
+        public string FromDate { get; set; }
     }
 }
