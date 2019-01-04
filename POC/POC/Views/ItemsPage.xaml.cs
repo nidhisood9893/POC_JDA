@@ -1,7 +1,6 @@
 ﻿
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using POC.Models;
 using POC.ViewModels;
 
 namespace POC.Views
@@ -16,27 +15,24 @@ namespace POC.Views
             InitializeComponent();
 
             BindingContext = viewModel = new ItemsViewModel(this);
-
         }
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
-
-            if (App.ToolbarItems?.Count > 0)
+            Device.OnPlatform(iOS: () =>
             {
-                DependencyService.Get<IToolbarItemBadge>().SetBadge(App.ToolbarItems, this, App.ToolbarItems[1], "1", Color.LightSeaGreen, Color.White);
-            }
+                if (App.ToolbarItems?.Count > 0)
+                {
+                    DependencyService.Get<IToolbarItemBadge>().SetBadge(App.ToolbarItems, this, App.ToolbarItems[1], "1", Color.LightSeaGreen, Color.White);
+                }
+            });
         }
-        async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
+
+        protected override void OnDisappearing()
         {
-            var item = args.SelectedItem as Leaves;
-            if (item == null)
-                return;
-
-            await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
-
-            // Manually deselect item.
-            //ItemsListView.SelectedItem = null;
+            base.OnDisappearing();
+            // MessagingCenter.Unsubscribe<ItemsPage, string>(this, "title");
         }
 
         void PositionSelectedHandler(object sender, CarouselView.FormsPlugin.Abstractions.PositionSelectedEventArgs e)
@@ -44,9 +40,9 @@ namespace POC.Views
             if (viewModel.Leaves != null)
             {
                 Title = viewModel.Leaves[e.NewValue].EmployeeName;
+                // to update title dynamically along with customization
+                // MessagingCenter.Send<ItemsPage, string>(this, "title", Title);
             }
-
-
         }
     }
 }

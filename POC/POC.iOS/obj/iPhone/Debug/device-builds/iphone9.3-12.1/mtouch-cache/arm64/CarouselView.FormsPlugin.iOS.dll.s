@@ -36460,7 +36460,7 @@ _mono_aot_file_info:
 	.long 312,6624,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 36,225,41,178,23,146,214,50,140,104,38,157,49,97,31,191
+	.byte 21,118,200,139,190,104,128,138,225,17,202,65,109,63,173,79
 	.globl _mono_aot_module_CarouselView_FormsPlugin_iOS_info
 	.align 3
 _mono_aot_module_CarouselView_FormsPlugin_iOS_info:

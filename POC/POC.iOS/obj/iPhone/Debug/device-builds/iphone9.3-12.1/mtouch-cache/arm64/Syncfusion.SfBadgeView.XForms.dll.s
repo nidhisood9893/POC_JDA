@@ -10461,7 +10461,7 @@ _mono_aot_file_info:
 	.long 144,1504,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 206,181,97,192,188,79,9,148,227,17,73,103,116,255,17,229
+	.byte 66,107,233,178,132,6,221,252,2,152,33,134,149,128,216,191
 	.globl _mono_aot_module_Syncfusion_SfBadgeView_XForms_info
 	.align 3
 _mono_aot_module_Syncfusion_SfBadgeView_XForms_info:

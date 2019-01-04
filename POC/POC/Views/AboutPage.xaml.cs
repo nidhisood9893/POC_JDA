@@ -14,13 +14,19 @@ namespace POC.Views
             InitializeComponent();
             BindingContext = new AboutViewModel(this);
         }
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            if (App.ToolbarItems?.Count > 0)
+
+            Device.OnPlatform(iOS: () =>
             {
-                DependencyService.Get<IToolbarItemBadge>().SetBadge(App.ToolbarItems, this, App.ToolbarItems[1], "1", Color.LightSeaGreen, Color.White);
-            }
+                if (App.ToolbarItems?.Count > 0)
+                {
+                    DependencyService.Get<IToolbarItemBadge>().SetBadge(App.ToolbarItems, this, App.ToolbarItems[1], "1", Color.LightSeaGreen, Color.White);
+                }
+            });
+
         }
     }
 }

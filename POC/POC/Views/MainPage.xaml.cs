@@ -18,10 +18,14 @@ namespace POC
         {
             base.OnAppearing();
             App.ToolbarItems = ToolbarItems;
-            if (ToolbarItems.Count > 0)
+
+            Device.OnPlatform(Android: () =>
             {
-                // DependencyService.Get<IToolbarItemBadge>().SetBadge(this, ToolbarItems[0], "1", (Color)Application.Current.Resources["BadgeColor"], Color.White);
-            }
+                if (ToolbarItems.Count > 0)
+                {
+                    DependencyService.Get<IToolbarItemBadge>().SetBadge(ToolbarItems, this, ToolbarItems[0], "1", (Color)Application.Current.Resources["BadgeColor"], Color.White);
+                }
+            });
         }
     }
 }

@@ -88,34 +88,6 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./tab_history.imageset/[car][][][2x][][][][][][][2d][(null)]</string>
-				<string>./tab_history.imageset/[car][][][3x][][][][][][][2d][(null)]</string>
-				<string>./tab_history.imageset/[car][][][][][][][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.1/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "tab_history" has 3 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./tab_apply.imageset/[car][][][2x][][][][][][][2d][(null)]</string>
-				<string>./tab_apply.imageset/[car][][][3x][][][][][][][2d][(null)]</string>
-				<string>./tab_apply.imageset/[car][][][][][][][][][][2d][(null)]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.1/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "tab_apply" has 3 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
 				<string>./logout.imageset/[car][][][2x][][][][][][][2d][(null)]</string>
 				<string>./logout.imageset/[car][][][3x][][][][][][][2d][(null)]</string>
 				<string>./logout.imageset/[car][][][][][][][][][][2d][(null)]</string>
@@ -138,6 +110,34 @@
 			<string>/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.1/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
 			<string>The image set "bell" has 3 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./tab_apply.imageset/[car][][][2x][][][][][][][2d][(null)]</string>
+				<string>./tab_apply.imageset/[car][][][3x][][][][][][][2d][(null)]</string>
+				<string>./tab_apply.imageset/[car][][][][][][][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.1/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "tab_apply" has 3 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./tab_history.imageset/[car][][][2x][][][][][][][2d][(null)]</string>
+				<string>./tab_history.imageset/[car][][][3x][][][][][][][2d][(null)]</string>
+				<string>./tab_history.imageset/[car][][][][][][][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.1/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "tab_history" has 3 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>

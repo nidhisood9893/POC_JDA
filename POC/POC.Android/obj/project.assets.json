@@ -951,12 +951,6 @@
         }
       }
     },
-    "dependencies": {
-      "Plugin.CurrentActivity": {
-        "target": "Package",
-        "version": "[2.1.0.4, )"
-      }
-    },
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
@@ -991,6 +985,10 @@
           "Plugin.Badge": {
             "target": "Package",
             "version": "2.1.0"
+          },
+          "Plugin.CurrentActivity": {
+            "target": "Package",
+            "version": "2.1.0.4"
           }
         }
       }

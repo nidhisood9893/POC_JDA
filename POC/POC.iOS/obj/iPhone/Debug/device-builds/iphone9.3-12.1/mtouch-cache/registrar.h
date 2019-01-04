@@ -35,6 +35,8 @@
 @class __MonoMac_NSAsyncSynchronizationContextDispatcher;
 @class Xamarin_Forms_Platform_iOS_FormsApplicationDelegate;
 @class AppDelegate;
+@class Xamarin_Forms_Platform_iOS_PageRenderer;
+@class POC_iOS_CustomPageRenderer;
 @class OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource;
 @class OpenTK_Platform_iPhoneOS_iPhoneOSGameView;
 @class GLKit_GLKView__GLKViewDelegate;
@@ -117,7 +119,6 @@
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer;
 @class Xamarin_Forms_Platform_iOS_OpenGLViewRenderer_Delegate;
 @class Xamarin_Forms_Platform_iOS_OpenGLViewRenderer;
-@class Xamarin_Forms_Platform_iOS_PageRenderer;
 @class Xamarin_Forms_Platform_iOS_PhoneMasterDetailRenderer_ChildViewController;
 @class Xamarin_Forms_Platform_iOS_PhoneMasterDetailRenderer;
 @class Xamarin_Forms_Platform_iOS_PickerRenderer_PickerSource;
@@ -218,6 +219,29 @@
 @interface AppDelegate : Xamarin_Forms_Platform_iOS_FormsApplicationDelegate<UIApplicationDelegate> {
 }
 	-(BOOL) application:(UIApplication *)p0 didFinishLaunchingWithOptions:(NSDictionary *)p1;
+	-(id) init;
+@end
+
+@interface Xamarin_Forms_Platform_iOS_PageRenderer : UIViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) viewSafeAreaInsetsDidChange;
+	-(void) viewDidAppear:(BOOL)p0;
+	-(void) viewDidDisappear:(BOOL)p0;
+	-(void) viewDidLoad;
+	-(void) viewWillDisappear:(BOOL)p0;
+	-(NSInteger) preferredStatusBarUpdateAnimation;
+	-(BOOL) prefersStatusBarHidden;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface POC_iOS_CustomPageRenderer : Xamarin_Forms_Platform_iOS_PageRenderer {
+}
+	-(void) willMoveToParentViewController:(UIViewController *)p0;
 	-(id) init;
 @end
 
@@ -493,23 +517,6 @@
 	-(void) viewDidLayoutSubviews;
 	-(void) viewDidLoad;
 	-(UIViewController *) childViewControllerForStatusBarHidden;
-	-(BOOL) conformsToProtocol:(void *)p0;
-	-(id) init;
-@end
-
-@interface Xamarin_Forms_Platform_iOS_PageRenderer : UIViewController {
-}
-	-(void) release;
-	-(id) retain;
-	-(int) xamarinGetGCHandle;
-	-(void) xamarinSetGCHandle: (int) gchandle;
-	-(void) viewSafeAreaInsetsDidChange;
-	-(void) viewDidAppear:(BOOL)p0;
-	-(void) viewDidDisappear:(BOOL)p0;
-	-(void) viewDidLoad;
-	-(void) viewWillDisappear:(BOOL)p0;
-	-(NSInteger) preferredStatusBarUpdateAnimation;
-	-(BOOL) prefersStatusBarHidden;
 	-(BOOL) conformsToProtocol:(void *)p0;
 	-(id) init;
 @end

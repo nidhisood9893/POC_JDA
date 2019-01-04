@@ -48704,7 +48704,7 @@ _mono_aot_file_info:
 	.long 312,3296,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 78,56,232,134,100,204,81,190,39,90,17,91,188,154,79,85
+	.byte 65,105,240,233,54,150,208,170,90,130,59,201,190,162,56,232
 	.globl _mono_aot_module_Syncfusion_SfBadgeView_XForms_iOS_info
 	.align 3
 _mono_aot_module_Syncfusion_SfBadgeView_XForms_iOS_info:

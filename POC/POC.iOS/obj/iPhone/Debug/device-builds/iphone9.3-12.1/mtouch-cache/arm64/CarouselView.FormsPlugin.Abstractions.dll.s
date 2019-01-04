@@ -7468,7 +7468,7 @@ _mono_aot_file_info:
 	.long 112,1464,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 90,209,58,35,3,23,135,193,200,126,102,251,73,92,62,179
+	.byte 201,21,87,212,182,6,126,195,19,249,107,174,8,88,99,217
 	.globl _mono_aot_module_CarouselView_FormsPlugin_Abstractions_info
 	.align 3
 _mono_aot_module_CarouselView_FormsPlugin_Abstractions_info:

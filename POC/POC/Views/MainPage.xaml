@@ -20,18 +20,7 @@
             BarBackgroundColor="{StaticResource NavigationColor}"
             Tint="White"
             Icon="tab_feed.png">
-           <!-- <NavigationPage.Icon>
-                <OnPlatform
-                    x:TypeArguments="FileImageSource">
-                    <On
-                        Platform="iOS"
-                        Value   ="tab_feed.png" />
-                    <On
-                        Platform="Android"
-                        Value   ="tab_feed.png" />
-                </OnPlatform>
-            </NavigationPage.Icon>-->
-           <x:Arguments>
+          <x:Arguments>
                 <views:ItemsPage />
             </x:Arguments>
         </NavigationPage>
@@ -41,18 +30,7 @@
             BarBackgroundColor="{StaticResource NavigationColor}"
             Tint="White"
             Icon="tab_apply">
-           <!-- <NavigationPage.Icon>
-                <OnPlatform
-                    x:TypeArguments="FileImageSource">
-                    <On
-                        Platform="iOS"
-                        Value   ="tab_apply" />
-                     <On
-                        Platform="Android"
-                        Value   ="tab_apply.png" />
-                </OnPlatform>
-            </NavigationPage.Icon>-->
-            <x:Arguments>
+         <x:Arguments>
                 <views:ApplyPage />
             </x:Arguments>
         </NavigationPage>
@@ -61,14 +39,7 @@
             BarBackgroundColor="{StaticResource NavigationColor}"
             Tint="White"
             Icon="tab_history.png">
-           <!-- <NavigationPage.Icon>
-                <OnPlatform
-                    x:TypeArguments="FileImageSource">
-                    <On
-                        Platform="iOS"
-                        Value   ="tab_history.png" />
-                </OnPlatform>
-            </NavigationPage.Icon>-->
+         
             <x:Arguments>
                 <views:AboutPage />
             </x:Arguments>

@@ -17,17 +17,18 @@ namespace POC.ViewModels
 
         public ItemsViewModel(ItemsPage itemsPage)
         {
-            Title = "EMP20148 \n Jon Doe";
+            Title = "Jon Doe";
+            itemsPage.AutomationId = "EMP20148";
             Leaves = new ObservableCollection<Leaves>();
             Views = new ObservableCollection<CarouselCustomView>();
             ToolbarItemCommand = new Command(() =>
             {
                 itemsPage.DisplayAlert("POC", "Coming Soon!", "Ok");
             });
-            ExecuteLoadItemsCommand();
+            LoadData();
         }
 
-        async Task ExecuteLoadItemsCommand()
+        async Task LoadData()
         {
             if (IsBusy)
                 return;

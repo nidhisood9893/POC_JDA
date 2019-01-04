@@ -10,6 +10,8 @@ namespace POC
 
         public MainViewModel(MainPage mainPage)
         {
+            Title = "Jon Doe";
+            mainPage.AutomationId = "EMP20148";
             ToolbarItemCommand = new Command(() =>
             {
                 mainPage.DisplayAlert("POC", "Coming Soon!", "Ok");

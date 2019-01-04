@@ -24,10 +24,10 @@ namespace POC.Droid
                 {
                     if (!string.IsNullOrEmpty(value))
                     {
-                        var idx = toolbarItems?.IndexOf(item);
-                        if (toolbar.Menu.Size() > idx)
+                        var idx = toolbarItems.IndexOf(item);
+                        if (toolbar.Menu.Size() > idx && idx >= 0)
                         {
-                            var menuItem = toolbar.Menu.GetItem(idx.Value);
+                            var menuItem = toolbar.Menu.GetItem(idx);
                             BadgeDrawable.SetBadgeText(CrossCurrentActivity.Current.Activity, menuItem, value, backgroundColor.ToAndroid(), textColor.ToAndroid());
                         }
                     }

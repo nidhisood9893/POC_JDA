@@ -93,6 +93,7 @@
     <Compile Include="Dependency Services\ToolbarItemBadgeService.cs" />
     <Compile Include="BadgeDrawable.cs" />
     <Compile Include="MainApplication.cs" />
+    <Compile Include="CustomPageRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -132,7 +133,6 @@
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
     <Folder Include="Dependency Services\">
-      <DependentUpon>Dependency Services</DependentUpon>
     </Folder>
   </ItemGroup>
   <Import Project="..\POC\POC.projitems" Label="Shared" />

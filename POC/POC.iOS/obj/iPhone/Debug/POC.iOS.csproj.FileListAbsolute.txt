@@ -69,7 +69,6 @@
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhone/Debug/Views/CarouselCustomView.xaml.g.cs
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhone/Debug/Views/MainPage.xaml.g.cs
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhone/Debug/Views/AboutPage.xaml.g.cs
-/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhone/Debug/Views/ItemDetailPage.xaml.g.cs
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhone/Debug/Views/ItemsPage.xaml.g.cs
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhone/Debug/Views/NewItemPage.xaml.g.cs
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.iOS/obj/iPhone/Debug/POC.iOS.csproj.CoreCompileInputs.cache
