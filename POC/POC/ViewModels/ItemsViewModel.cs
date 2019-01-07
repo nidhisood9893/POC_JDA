@@ -13,7 +13,6 @@ namespace POC.ViewModels
     {
         public ObservableCollection<Leaves> Leaves { get; set; }
         public ObservableCollection<CarouselCustomView> Views { get; set; }
-        public ICommand ToolbarItemCommand { get; }
 
         public ItemsViewModel(ItemsPage itemsPage)
         {
@@ -21,13 +20,15 @@ namespace POC.ViewModels
             itemsPage.AutomationId = "EMP20148";
             Leaves = new ObservableCollection<Leaves>();
             Views = new ObservableCollection<CarouselCustomView>();
-            ToolbarItemCommand = new Command(() =>
-            {
-                itemsPage.DisplayAlert("POC", "Coming Soon!", "Ok");
-            });
+
             LoadData();
         }
 
+        #region Service Implementation
+        /// <summary>
+        /// Loads the data from MockDataStore.
+        /// </summary>
+        /// <returns>The data.</returns>
         async Task LoadData()
         {
             if (IsBusy)
@@ -44,7 +45,7 @@ namespace POC.ViewModels
                     Leaves.Add(item);
                     var carouselView = new CarouselCustomView();
                     carouselView.BindingContext = item;
-                    Views.Add(carouselView); //new CarouselCustomView { leaves = item, Leaves = item, BindingContext = Leaves }
+                    Views.Add(carouselView);
                 }
             }
             catch (Exception ex)
@@ -56,5 +57,6 @@ namespace POC.ViewModels
                 IsBusy = false;
             }
         }
+        #endregion
     }
 }

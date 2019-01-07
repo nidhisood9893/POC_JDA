@@ -9,7 +9,6 @@
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/Views/MainPage.xaml.g.cs
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/Views/AboutPage.xaml.g.cs
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/Views/ItemsPage.xaml.g.cs
-/Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/Views/NewItemPage.xaml.g.cs
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/POC.Android.csproj.CoreCompileInputs.cache
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/XamlC.stamp
 /Users/nidhisood/Downloads/JDA_POC-master/POC/POC.Android/obj/Debug/POC.Android.dll

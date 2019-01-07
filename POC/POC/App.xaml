@@ -7,6 +7,10 @@
         <ResourceDictionary>
             <!--Global Strings-->
             <x:String
+                x:Key="AppName">POC</x:String>
+            <x:String
+                x:Key="Ok">Ok</x:String>
+           <x:String
                 x:Key="Approved">Approved</x:String>
             <x:String
                 x:Key="Rejected">Rejected</x:String>

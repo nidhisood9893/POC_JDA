@@ -35,6 +35,11 @@ namespace POC.Views
             // MessagingCenter.Unsubscribe<ItemsPage, string>(this, "title");
         }
 
+        /// <summary>
+        /// Selected Position handler for CarouselView.
+        /// </summary>
+        /// <param name="sender">Sender.</param>
+        /// <param name="e">E.</param>
         void PositionSelectedHandler(object sender, CarouselView.FormsPlugin.Abstractions.PositionSelectedEventArgs e)
         {
             if (viewModel.Leaves != null)

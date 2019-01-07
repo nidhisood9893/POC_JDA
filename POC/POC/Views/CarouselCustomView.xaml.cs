@@ -11,7 +11,6 @@ namespace POC.Views
         public CarouselCustomView()
         {
             InitializeComponent();
-            //  BindingContext = Leaves;
         }
 
     }

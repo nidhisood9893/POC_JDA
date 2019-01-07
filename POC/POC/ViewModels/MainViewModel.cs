@@ -14,7 +14,7 @@ namespace POC
             mainPage.AutomationId = "EMP20148";
             ToolbarItemCommand = new Command(() =>
             {
-                mainPage.DisplayAlert("POC", "Coming Soon!", "Ok");
+                mainPage.DisplayAlert((string)Application.Current.Resources["AppName"], (string)Application.Current.Resources["ComingSoon"], (string)Application.Current.Resources["Ok"]);
             });
         }
     }

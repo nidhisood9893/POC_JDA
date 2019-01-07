@@ -11,7 +11,6 @@ namespace POC.ViewModels
     public class AboutViewModel : BaseViewModel
     {
         public ObservableCollection<History> LeavesHistory { get; set; }
-        public ICommand ToolbarItemCommand { get; }
 
         public AboutViewModel(Views.AboutPage aboutPage)
         {
@@ -19,12 +18,13 @@ namespace POC.ViewModels
             aboutPage.AutomationId = "EMP20148";
             LeavesHistory = new ObservableCollection<History>();
             LoadData();
-            ToolbarItemCommand = new Command(() =>
-            {
-                aboutPage.DisplayAlert("POC", "Coming Soon!", "Ok");
-            });
         }
 
+        #region Service Implementation
+        /// <summary>
+        /// Loads the data from MockDataStore.
+        /// </summary>
+        /// <returns>The data.</returns>
         async Task LoadData()
         {
             if (IsBusy)
@@ -50,5 +50,7 @@ namespace POC.ViewModels
                 IsBusy = false;
             }
         }
+
+        #endregion
     }
 }
